@@ -1,0 +1,174 @@
+
+.wrap {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    background-color: #5E5E5E;
+}
+
+.humans, .elfs, .dworfs, .hobbits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: #C1DBE3;
+}
+.header h2 {
+    font-size: 2rem;
+    width: 60%;
+    text-align: center;
+}
+.header button {
+    margin-right: 20px;
+    background: #26a69a;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    outline: none;
+}
+
+
+.name {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.name p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.info {
+    padding-top: 4vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: #f2f3f4;
+    align-items: center;
+}
+
+.elfs{
+    border-left: 1px solid  #C1DBE3;
+    border-right: 1px solid  #C1DBE3;
+}
+.dworfs {
+    border-right: 1px solid  #C1DBE3;
+}
+.btn_profile {
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.btn_edit, .btn_del {
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    outline: none;
+}
+.btn_edit {
+    background-color: #D8D78F;
+}
+.btn_del {
+    background-color: #AA5042;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .wrap {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #5E5E5E;
+    }
+
+    .humans, .elfs, .dworfs, .hobbits {
+        width: 50%;
+        background-color: #5E5E5E;
+        height: 30vh;
+    }
+
+    .header h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .wrap {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #5E5E5E;
+    }
+
+    .humans, .elfs, .dworfs, .hobbits {
+        width: 50%;
+        background-color: #5E5E5E;
+        height: 30vh;
+    }
+
+    .header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .wrap {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #5E5E5E;
+    }
+
+    .humans, .elfs, .dworfs, .hobbits {
+        width: 100%;
+        background-color: #5E5E5E;
+        height: 30vh;
+    }
+
+    .header h2 {
+        font-size: 1.5rem;
+    }
+}
